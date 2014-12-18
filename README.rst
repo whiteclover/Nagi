@@ -11,7 +11,7 @@ Design
 
 
 
-`The Detail Design (中文|chinese) <https://github.com/thomashuang/Nagi>`_
+`The Detail Design (中文|chinese) <https://github.com/thomashuang/Nagi/blob/master/design_cn.rst>`_
 
 Introduction
 ---------------
