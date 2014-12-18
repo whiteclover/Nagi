@@ -4,14 +4,24 @@ Nagi
 Nagi is a Leaderboard system that helps you rank million user data.
 
 
+
+
 Design
 ======
+
+ `The Detail Design (中文|chinese)<https://github.com/thomashuang/Nagi>`_
+
+Introduction
+---------------
 
 In system, supporting two leaderboard ways, one is ranking by score DESC,the same score has the same rank; another is 'dense' that ranks by score DESC, entry id ASC, the same score has diffrent rank order by entry id ASC.
 
 In leaderboard attribute 'adapter', has four values ('base', 'bucket', 'block', 'chunk'), they are four leaderboard algorithms, but the kernel algorithm is bucket sort algorithm.
 
 .. note:: When you don't use base adapter to rank leaderboard, you shuld set cron to fresh the bucket table
+
+
+
 
 
 Base MySQL SQL 
