@@ -1,4 +1,0 @@
-Nagi
-====
-
-Slient, Slient
