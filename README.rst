@@ -9,7 +9,9 @@ Nagi is a Leaderboard system that helps you rank million user data.
 Design
 ======
 
- `The Detail Design (中文|chinese)<https://github.com/thomashuang/Nagi>`_
+
+
+`The Detail Design (中文|chinese)<https://github.com/thomashuang/Nagi>`_
 
 Introduction
 ---------------
