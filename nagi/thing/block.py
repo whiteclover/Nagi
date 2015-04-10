@@ -131,7 +131,7 @@ class BlockEntryThing(EntryThingTrait):
             buckets.append(BlockBucket(leaderboard_id, from_score, to_score, rank, rank + rank_size - 1, dense, dense + dense_size - 1))
             if len(buckets) == 500:
                 self.save_buckets(buckets)
-                buckets = []
+                buckets[:] = []
             to_score = from_score - 1
             from_score = to_score - chunk_block
             from_score = max(min_score, from_score)
