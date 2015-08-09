@@ -194,7 +194,7 @@ class Connection(object):
             self._connect = MySQLdb.connect(**self._db_options)
             self._connect.autocommit(True)
         except MySQLdb.Error, e:
-            logging.error("Error MySQL on %s", e.args[1])
+            LOGGER.error("Error MySQL on %s", e.args[1])
 
     def _close(self):
 
@@ -292,8 +292,8 @@ class ThreadSafeConnectionPool(BaseConnectionPool):
                 conn.close()
             for conn in self._in_use_conns:
                 conn.close()
-            self._available_conns = []
-            self._in_use_conns = []
+            self._available_conns[:] = []
+            self._in_use_conns[:] = []
             self._created_conns = 0
 
 
